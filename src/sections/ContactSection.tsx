@@ -20,25 +20,25 @@ const ContactSection: React.FC = () => {
               <input 
                 type="text" 
                 placeholder="Name" 
-                className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors"
+                className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors duration-[160ms] ease-out"
                 required
               />
               <input 
                 type="email" 
                 placeholder="Email" 
-                className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors"
+                className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors duration-[160ms] ease-out"
                 required
               />
             </div>
             <textarea 
               placeholder="Your Message" 
               rows={5}
-              className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors resize-none"
+              className="bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white w-full outline-none focus:border-[#B600A8] transition-colors duration-[160ms] ease-out resize-none"
               required
             ></textarea>
             <button 
               type="submit"
-              className="rounded-full text-white font-medium uppercase tracking-widest px-10 py-4 mt-4 self-center sm:self-start w-full sm:w-auto hover:opacity-90 transition-opacity"
+              className="rounded-full text-white font-medium uppercase tracking-widest px-10 py-4 mt-4 self-center sm:self-start w-full sm:w-auto hover:opacity-90 active:scale-[0.97] transition-all duration-[160ms] ease-out"
               style={{
                 background: 'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',
                 boxShadow: '0px 4px 4px rgba(181, 1, 167, 0.25), inset 4px 4px 12px #7721B1',
@@ -52,9 +52,9 @@ const ContactSection: React.FC = () => {
         <FadeIn y={20} delay={0.4} className="mt-20 w-full flex flex-col sm:flex-row justify-between items-center border-t border-white/10 pt-8 gap-4">
           <p className="text-white/50 text-sm">© {new Date().getFullYear()} Daniel Baldo. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/70 hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="text-white/70 hover:text-white transition-colors">GitHub</a>
-            <a href="#" className="text-white/70 hover:text-white transition-colors">Twitter</a>
+            <a href="#" className="text-white/70 hover:text-white transition-colors duration-[150ms] ease-out">LinkedIn</a>
+            <a href="#" className="text-white/70 hover:text-white transition-colors duration-[150ms] ease-out">GitHub</a>
+            <a href="#" className="text-white/70 hover:text-white transition-colors duration-[150ms] ease-out">Twitter</a>
           </div>
         </FadeIn>
       </div>

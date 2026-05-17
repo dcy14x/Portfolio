@@ -39,7 +39,7 @@ const AboutSection: React.FC = () => {
           <a 
             href="/resume.pdf" 
             download
-            className="inline-flex items-center justify-center rounded-full text-white font-medium uppercase tracking-widest outline-none px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base border border-white/20 hover:bg-white/10 transition-colors"
+            className="inline-flex items-center justify-center rounded-full text-white font-medium uppercase tracking-widest outline-none px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base border border-white/20 hover:bg-white/10 active:scale-[0.97] transition-all duration-[160ms] ease-out"
           >
             Resume
           </a>

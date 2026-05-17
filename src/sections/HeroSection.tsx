@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
       <FadeIn delay={0} y={-20} duration={0.8} as="nav" className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 w-full z-20">
         {['About', 'Services', 'Projects', 'Contact'].map((item) => (
-          <a key={item} href={`#${item.toLowerCase()}`} className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200">
+          <a key={item} href={`#${item.toLowerCase()}`} className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-[150ms] ease-out">
             {item}
           </a>
         ))}
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
           <a 
             href="/resume.pdf" 
             download
-            className="inline-flex items-center justify-center rounded-full text-white font-medium uppercase tracking-widest outline-none px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base border border-white/20 hover:bg-white/10 transition-colors"
+            className="inline-flex items-center justify-center rounded-full text-white font-medium uppercase tracking-widest outline-none px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base border border-white/20 hover:bg-white/10 active:scale-[0.97] transition-all duration-[160ms] ease-out"
           >
             Resume
           </a>
