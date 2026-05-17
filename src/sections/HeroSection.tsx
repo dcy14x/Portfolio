@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import FadeIn from '../components/FadeIn';
 import ContactButton from '../components/ContactButton';
 
 const BG_VIDEO = "/video/Animation.mp4";
 
 const HeroSection: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+    }
+  }, []);
+
   return (
     <section className="h-screen flex flex-col overflow-x-clip relative bg-black">
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <video
+          ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover opacity-60"
           src={BG_VIDEO}
           autoPlay
           loop
           muted
-          defaultMuted
           playsInline
           preload="auto"
         />
