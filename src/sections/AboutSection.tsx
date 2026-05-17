@@ -34,7 +34,16 @@ const AboutSection: React.FC = () => {
           className="text-center font-medium leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
         />
         
-        <ContactButton />
+        <div className="flex flex-col sm:flex-row gap-4">
+          <ContactButton />
+          <a 
+            href="/resume.pdf" 
+            download
+            className="inline-flex items-center justify-center rounded-full text-white font-medium uppercase tracking-widest outline-none px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base border border-white/20 hover:bg-white/10 transition-colors"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </section>
   );
