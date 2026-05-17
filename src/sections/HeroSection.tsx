@@ -14,7 +14,9 @@ const HeroSection: React.FC = () => {
           autoPlay
           loop
           muted
+          defaultMuted
           playsInline
+          preload="auto"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0C0C0C]" />
       </div>
